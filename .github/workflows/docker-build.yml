@@ -31,4 +31,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: yourhubid/app-k8s-basic:latest   # 실제 Docker Hub 저장소 이름으로 변경
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app-k8s-basic:latest   # 실제 Docker Hub 저장소 이름으로 변경
